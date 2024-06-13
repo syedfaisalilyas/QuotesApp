@@ -12,7 +12,7 @@ class QuoteListScreen extends StatefulWidget {
 class _QuoteListScreenState extends State<QuoteListScreen> {
   List<Quote> filteredQuotes = List.from(QuoteData.quoteList);
   bool isLoading = true;
-  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; // Adjust with your Firebase URL
+  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; 
 
   @override
   void initState() {

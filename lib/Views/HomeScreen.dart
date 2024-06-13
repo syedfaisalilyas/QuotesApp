@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   static List<Widget> _widgetOptions = <Widget>[
     DailyQuotePage(),
     QuoteListScreen(),
-    FavoritesScreen(), // Provide a dummy function here
+    FavoritesScreen(), 
   ];
 
   void _onItemTapped(int index) {

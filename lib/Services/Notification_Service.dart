@@ -16,7 +16,7 @@ class NotificationService {
       requestBadgePermission: true,
       requestSoundPermission: true,
       onDidReceiveLocalNotification: (int id, String? title, String? body, String? payload) async {
-        // Handle notification tap
+        
       },
     );
 
@@ -28,7 +28,7 @@ class NotificationService {
     _flutterLocalNotificationsPlugin.initialize(
       initializationSettings,
       onDidReceiveNotificationResponse: (NotificationResponse notificationResponse) async {
-        // Handle notification tap
+        
         final String? payload = notificationResponse.payload;
         if (payload != null) {
           print('Notification payload: $payload');
@@ -36,22 +36,22 @@ class NotificationService {
       },
     );
 
-    // Request iOS permissions
+    
     requestIOSPermissions();
   }
 
   static Future<void> scheduleDailyNotification() async {
     print("Scheduling daily notification");
     await _flutterLocalNotificationsPlugin.zonedSchedule(
-      0, // Unique ID for this notification
-      'Quote of the day', // Notification title
-      'Check out today\'s inspiring quote!', // Notification body
-      _nextInstanceOf3PM(), // Schedule time
+      0, 
+      'Quote of the day', 
+      'Check out today\'s inspiring quote!', 
+      _nextInstanceOf3PM(), 
       const NotificationDetails(
         android: AndroidNotificationDetails(
-          'daily_notification_channel', // Channel ID
-          'Daily Notification', // Channel name
-          channelDescription: 'Shows daily quote of the day', // Channel description
+          'daily_notification_channel', 
+          'Daily Notification', 
+          channelDescription: 'Shows daily quote of the day', 
           importance: Importance.high,
           priority: Priority.high,
         ),
@@ -60,7 +60,7 @@ class NotificationService {
       androidAllowWhileIdle: true,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
-      matchDateTimeComponents: DateTimeComponents.time, // Ensures the notification repeats daily
+      matchDateTimeComponents: DateTimeComponents.time, 
     );
   }
 

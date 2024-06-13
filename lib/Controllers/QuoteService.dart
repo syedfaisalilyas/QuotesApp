@@ -4,7 +4,7 @@ import '../models/quote.dart';
 import '../models/quote.dart' as quote_data;
 
 class QuoteService {
-  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; // Replace with your Firebase Database URL
+  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; 
  
   static Future<void> saveInitialQuotes() async {
     try {

@@ -15,7 +15,7 @@ class _DailyQuotePageState extends State<DailyQuotePage> {
   List<Quote> _quotes = [];
   late Quote currentQuote;
   bool isLoading = true;
-  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; // Adjust with your Firebase URL
+  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; 
 
   @override
   void initState() {
@@ -82,11 +82,9 @@ class _DailyQuotePageState extends State<DailyQuotePage> {
   }
 
   Future<void> _addQuoteToFavorites(Quote quote) async {
-    // Implement your logic to add quote to favorites
   }
 
   Future<void> _removeQuoteFromFavorites(Quote quote) async {
-    // Implement your logic to remove quote from favorites
   }
 
   void _shareQuote(Quote quote) async {
@@ -98,7 +96,7 @@ class _DailyQuotePageState extends State<DailyQuotePage> {
         await launch(whatsappUrl);
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('WhatsApp is not installed on your device'),
           ),
         );

@@ -12,7 +12,7 @@ class FavoritesScreen extends StatefulWidget {
 class _FavoritesScreenState extends State<FavoritesScreen> {
   List<Quote> favoriteQuotes = [];
   bool isLoading = true;
-  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com'; // Adjust with your Firebase URL
+  static const String baseUrl = 'https://quotesapp-838bd-default-rtdb.firebaseio.com';
 
   @override
   void initState() {
