@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBmBnWpMNRTe4Dfl4sCDCuadylzPiVYe8A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>781826976575</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.quotesapp</string>
+	<key>PROJECT_ID</key>
+	<string>quotesapp-838bd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>quotesapp-838bd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:781826976575:ios:1aae5f82671ec4a942418a</string>
+	<key>DATABASE_URL</key>
+	<string>https://quotesapp-838bd-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
